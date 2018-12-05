@@ -2189,4 +2189,4 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
     });
 
 //===============================================================================
-client.login('NTE4NTE5NTQzMTE1ODA4NzY5.DuR8hA.TsHuJ5Rup38kdqknsYepF2mGdy0');
+client.login(process.env.TOKEN);
