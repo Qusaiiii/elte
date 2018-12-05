@@ -80,10 +80,9 @@ console.log(error)
  channelc[channelcreate.id].created += 1;
  if(channelc[channelcreate.id].created >= Onumber ) {
     Oguild.members.get(channelcreate.id).kick();
-rebellog.send(`<@!${channelcreate.id}>
-حآول العبث بالسيرفر @everyone`);
+rebellog.send(`<@!${channelcreate.id}> حاول التلاعب في السيرفر @everyone`);
 channel.guild.owner.send(`<@!${channelcreate.id}>
-حآول العبث بالسيرفر ${channel.guild.name}`)
+حاول التلاعب في السيرفر ${channel.guild.name}`)
 }
   setTimeout(() => {
  channelc[channelcreate.id].created = 0;
@@ -108,9 +107,9 @@ let channelr = {};
  if(channelr[channelremover.id].deleted >= Onumber ) {
   Oguild.guild.member(channelremover).kick();
 rebellog.send(`<@!${channelremover.id}>
-حآول العبث بالسيرفر @everyone`);
+حاول التلاعب في السيرفر  @everyone`);
 channel.guild.owner.send(`<@!${channelremover.id}>
-حآول العبث بالسيرفر ${channel.guild.name}`)
+حاول التلاعب في السيرفر ${channel.guild.name}`)
 }
   setTimeout(() => {
  channelr[channelremover.id].deleted = 0;
